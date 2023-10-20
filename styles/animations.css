@@ -39,3 +39,63 @@
     opacity: 1;
   }
 }
+
+.theme-menu__button {
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button::after {
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:disabled::before {
+  animation: moving-arrow 0.5s infinite alternate ease-in-out;
+}
+
+.card__icon-button {
+  transition: border 0.3s ease;
+}
+
+.button {
+  transition: box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transition: background-color;
+}
+
+.button::after {
+  transition: transform 0.5s ease-in-out;
+}
+
+.like-icon .main-body {
+  transition: fill 0.3s linear;
+}
+
+.like-icon .core {
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon .contour {
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .core {
+  transition: opacity 0.3s linear, fill 0.3s linear;
+}
+
+.like-icon.is-liked .contour {
+  transition: fill 0.3s 0.06s ease;
+}
+
+.like-icon.is-liked {
+  transform-origin: center;
+  animation: heart-scale 0.3s alternate ease-in;
+  animation-delay: 0.1s;
+}
+
+.like-icon.is-liked .sparks {
+  transform-origin: center;
+  animation: sparks 0.3s alternate ease-in;
+  animation-delay: 0.3s;
+}
