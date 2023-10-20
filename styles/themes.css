@@ -4,3 +4,85 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --font-family-main: "Inter", sans-serif;
+  --font-family-accent: "PressStart2P", cursive;
+  --font-weight-default: 400;
+  --font-weight-title: 700;
+  --font-size-default: 18px;
+  --bg-color: #ffffff;
+  --accent-color: #000000;
+  --background-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  --container-width: clamp(375px, 50vw, 696px);
+  --text-stroke-color: #ffffff;
+  --button-text-hover-color: #ffffff;
+  --heart-contour-color: #000000;
+  --heart-active-color: #ff0000;
+}
+
+:root.theme-dark {
+  --font-weight-default: 465;
+  --font-weight-title: 785;
+  --bg-color: #000000;
+  --accent-color: #00cc14;
+  --background-gradient: repeating-linear-gradient(
+      to right,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #007f0c, #004306);
+  --text-stroke-color: #00cc14;
+  --button-text-hover-color: #00cc14;
+  --heart-contour-color: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-weight-default: 465;
+    --font-weight-title: 785;
+    --bg-color: #000000;
+    --accent-color: #00cc14;
+    --background-gradient: repeating-linear-gradient(
+        to right,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #007f0c, #004306);
+    --text-stroke-color: #00cc14;
+    --button-text-hover-color: #00cc14;
+    --heart-contour-color: #00cc14;
+  }
+}
