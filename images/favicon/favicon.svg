@@ -2,7 +2,7 @@
     <style>
     @media (prefers-color-scheme: dark) {
         :root path {
-            fill: white;
+            fill: #00cc14;
         }
     }
     </style>
